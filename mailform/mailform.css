@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+div#mf_wrapper {
+	width: 640px;
+	text-align: left;
+	margin: 0px auto;
+	font-family: sans-serif;
+}
+div#mf_header h1 {
+	font-size: 24px;
+	border-bottom: solid 1px #999;
+	margin: 0px;
+	padding: 0px;
+}
+div#mf_header h2 {
+	font-size: 16px;
+	color: #999;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+form#mailform {
+	padding: 5px;
+}
+table.mailform {
+	width: 100%;
+	box-sizing: border-box;
+}
+table.mailform tr th,table.mailform tr td {
+	text-align: left;
+	font-weight: normal;
+	font-size: 12px;
+	border-bottom: solid 1px #999;
+	padding: 7px 5px 7px 5px;
+	box-sizing: border-box;
+}
+table.mailform tr th {
+	width: 150px;
+}
+table.mailform tr th span {
+	color: #C00;
+	font-size: 10px;
+}
+table.mailform tr th p {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+	color: #999;
+}
+table.mailform tr td textarea {
+	max-width: 100%;
+	width: 100%;
+	height: 120px;
+	box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+	div#mf_wrapper {
+		width: auto;
+		max-width: 100%;
+	}
+	table.mailform,table.mailform tbody,table.mailform tbody tr {
+		border-spacing: 0px;
+		border-collapse: collapse;
+		display: block;
+		width: auto;
+		max-width: 100%;
+	}
+	table.mailform tr th,table.mailform tr td {
+		display: block;
+		width: auto;
+		max-width: 100%;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+	table.mailform tr th {
+		border: none;
+		padding: 7px 5px 2px 5px;
+	}
+	table.mailform tr th p {
+		display: inline-block;
+	}
+	table.mailform tr th span {
+		display: inline-block;
+		margin: 0px 3px;
+	}
+	table.mailform tr td {
+		padding: 2px 5px 7px 5px;
+	}
+	table.mailform tr td textarea,
+	table.mailform tr td input,
+	table.mailform tr td select {
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+}
